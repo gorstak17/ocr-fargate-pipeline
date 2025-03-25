@@ -39,7 +39,7 @@ aws s3 cp sample.pdf s3://$BUCKET_NAME/
 export QUEUE_URL=<your-sqs-queue-url>
 python3 ec2/trigger.py
 ```
-> **Note:** Export your SQS queque url from Terraform output.
+> **Note:** Export your SQS queue url from Terraform output.
 
 This sends a message to SQS, triggering Lambda which launches an ECS Fargate task running `ocrmypdf`.
 
