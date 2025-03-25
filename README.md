@@ -1,6 +1,6 @@
 ## 📥 Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/ocr-fargate-pipeline.git
+git clone https://github.com/gorstak17/ocr-fargate-pipeline.git
 cd ocr-fargate-pipeline
 ```
 
