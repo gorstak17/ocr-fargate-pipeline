@@ -32,12 +32,15 @@ After deployment completes, note the following Terraform outputs:
 export BUCKET_NAME=<your-s3-bucket-name>
 aws s3 cp sample.pdf s3://$BUCKET_NAME/
 ```
+> **Note:** Export your S3 bucket name from Terraform output.
 
 ### 2️⃣ Trigger the OCR Pipeline
 ```bash
 export QUEUE_URL=<your-sqs-queue-url>
 python3 ec2/trigger.py
 ```
+> **Note:** Export your SQS queque url from Terraform output.
+
 This sends a message to SQS, triggering Lambda which launches an ECS Fargate task running `ocrmypdf`.
 
 ## 🔍 Monitoring the Workflow
