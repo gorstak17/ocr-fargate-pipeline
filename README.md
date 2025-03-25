@@ -41,11 +41,11 @@ python3 ec2/trigger.py
 This sends a message to SQS, triggering Lambda which launches an ECS Fargate task running `ocrmypdf`.
 
 ## 🔍 Monitoring the Workflow
-- **S3 Console:** Verify PDF upload
-- **SQS Console:** Confirm message in queue
-- **Lambda Console:** Check invocation logs
-- **ECS Console:** View Fargate task status
-- **CloudWatch Logs:** Inspect `ocrmypdf` output logs
+- **S3 Console:** [Verify PDF upload](https://s3.console.aws.amazon.com/s3/home)
+- **SQS Console:** [Confirm message in queue](https://console.aws.amazon.com/sqs/v2/home)
+- **Lambda Console:** [Check invocation logs](https://console.aws.amazon.com/lambda/home)
+- **ECS Console:** [View Fargate task status](https://console.aws.amazon.com/ecs/home)
+- **CloudWatch Logs:** [Inspect `ocrmypdf` output logs](https://console.aws.amazon.com/cloudwatch/home#logsV2:log-groups)
 
 ## 🧹 Cleanup
 Destroy all resources:
